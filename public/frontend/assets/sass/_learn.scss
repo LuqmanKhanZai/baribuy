@@ -1,0 +1,111 @@
+// Learn Page
+
+section.learn--banner {
+  background-image: url("../img/learnBanner.png");
+  background-size: cover;
+  min-height: 400px;
+  margin-bottom: 50px;
+  display: flex;
+  color: $white;
+  justify-content: center;
+  .row {
+    height: 100%;
+  }
+}
+.super--heading {
+  font-size: 48px;
+  @include fontHeading;
+  font-weight: 900;
+}
+.super--subheading {
+  font-size: 36px;
+  font-weight: 600;
+  @include fontHeading;
+}
+.learn--super--subheading {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 500;
+  @include fontHeading;
+}
+
+//  related content section
+section#relatedcontent {
+  margin: 30px 0;
+}
+.section--heading {
+  font-size: 36px;
+  @include fontHeading;
+  font-weight: 800;
+}
+ul.links--new {
+  li {
+    display: inline-block;
+    width: 49%;
+    margin: 5px 0;
+  }
+  span {
+    display: inline-block;
+    a {
+      font-size: 22px;
+      font-weight: 600;
+      color: $blue;
+    }
+  }
+  span.icon {
+    background: $blue;
+    padding: 10px;
+    display: inline-flex;
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 7px;
+  }
+  svg {
+    height: 40px;
+    color: $white;
+  }
+}
+
+.text--blue {
+  color: $blue;
+  font-size: 18px;
+  font-weight: 500;
+  @include fontBody;
+}
+
+// calculator section
+
+section#calculator {
+  background-color: #f7fbfd;
+  margin-top: 50px;
+  padding: 80px 0;
+  .dropdown-toggle::after {
+    display: none;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    background-color: $blue;
+    padding: 20px;
+    color: $white;
+
+    h1 {
+      font-size: 16px;
+      margin-bottom: 0;
+    }
+  }
+  form {
+    input {
+      margin: 10px 0;
+      background-color: #f3f3f3;
+    }
+  }
+  .body {
+    padding: 20px;
+  }
+  .calculator--inner {
+    border: 1px solid #e0e0e0;
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+}

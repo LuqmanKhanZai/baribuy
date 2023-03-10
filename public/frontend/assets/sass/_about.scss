@@ -1,0 +1,52 @@
+//  About page
+
+section.about--banner {
+  background-image: url("../img/aboutBanner.jpg");
+  background-size: cover;
+  min-height: 400px;
+  margin-bottom: 50px;
+  display: flex;
+  color: $white;
+  justify-content: center;
+  .row {
+    height: 100%;
+  }
+}
+
+// our section
+
+section#our {
+  span.icon {
+    position: relative;
+    top: -5px;
+  }
+  p.description {
+    color: $gray;
+    font-size: 16px;
+    max-width: 80%;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+}
+
+// Our core section
+
+section#ourcore {
+  background-color: #f7fbfd;
+  margin: 80px 0;
+  padding: 80px 0;
+  margin-bottom: 0;
+  .bg--round--para {
+    max-width: 80%;
+  }
+  .border-top {
+    border-top: 1px solid lightgray;
+    margin-top: 50px;
+    padding-top: 20px;
+  }
+}
+.bariuy-circle-img{
+  img{
+    max-width: 300px;
+  }
+}

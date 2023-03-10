@@ -1,0 +1,48 @@
+// FAQs
+section#faq__banner {
+  background-color: #f7fbfd;
+  padding: 60px 0;
+  p {
+    color: $black-gray;
+    max-width: 700px;
+  }
+}
+.searchContent {
+  position: relative;
+  max-width: 500px;
+
+  svg {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: $light-gray;
+  }
+}
+
+// listing__ul styleing
+
+section#listing__ul{
+    margin: 30px 0;
+    padding: 60px 0;
+}
+.col--heading{
+    font-size: 24px;
+    @include fontHeading;
+    color: $black;
+    font-weight: 600;
+}
+.section--links{
+    margin-top: 10px;
+    a{
+        font-size: 14px;
+        color: $black;
+        font-weight: 400;
+        li{
+            margin-top: 10px;
+        }
+        &.last--option{
+            font-weight: 600;
+            color: $blue;
+        }
+    }
+}

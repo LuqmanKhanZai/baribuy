@@ -1,0 +1,207 @@
+// Variables and Basic styling
+
+// Color Variables
+
+$blue: #0c4da1;
+$bg-blue: #0072bc;
+$black: #000000;
+$white: #ffffff;
+$gray: #909090;
+$light-bg-blue: #f7fbfd;
+$dark-gray: #505050;
+$yellow: #ffb905;
+$orange: #ff7d05;
+$light-gray: #e9e9e9;
+$lighter-gray: #f2f2f2;
+$siebar-bg: #f9fafb;
+$black-gray: #909090;
+
+// @import Font Family
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400,500,600;0,700;1,400&display=swap");
+
+// @mixin styling
+@mixin fontHeading {
+    font-family: "Montserrat", sans-serif;
+}
+@mixin fontBody {
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    @include fontBody;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: $gray;
+}
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+// Buttons
+
+@mixin borderButton {
+    border-radius: 4px;
+    border: 1px solid $gray;
+}
+@mixin bgButton {
+    @include borderButton;
+    border-color: $blue;
+    color: $white;
+    background-color: $blue;
+}
+
+//
+.nav-pills .nav-link {
+    color: inherit;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+    color: inherit;
+    background: none;
+}
+#listing--section .nav-link.active .right--arrow {
+    display: block;
+}
+.available--now {
+    @include fontHeading;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    color: $blue;
+}
+
+.primary--btn {
+    background-color: $blue;
+    color: $white;
+    border-radius: 6px;
+    padding: 8px 30px;
+    border: 1px solid transparent;
+    transition: all 0.3s;
+    &:hover {
+        background-color: transparent;
+        border-color: $blue;
+        color: $blue;
+    }
+}
+
+// rightSidebar
+
+#rightSidebar {
+    position: fixed;
+    height: 100vh;
+    background: $light-bg-blue;
+    right: 0;
+    width: 275px;
+    right: -275px;
+    transition: all 0.3s;
+    top: 0px;
+    border-left: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+    z-index: 9;
+
+    .inner--rightsidebar {
+        padding: 20px;
+    }
+    .title--center {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        color: $dark-gray;
+        margin-bottom: 0;
+    }
+    .title--amount {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: uppercase;
+        color: $blue;
+    }
+    .sidebar--img {
+        position: relative;
+        svg {
+            position: absolute;
+            top: 50%;
+            right: 46px;
+            background: rgba(255, 255, 255, 0.895);
+            padding: 10px;
+            border-radius: 50%;
+            color: $dark-gray;
+            border: 1px solid lightgray;
+            box-shadow: 1px 2px 3px #d3d3d38c;
+        }
+    }
+    .top--bar {
+        margin-top: 10px;
+    }
+    hr.section--hr {
+        max-width: 70%;
+        margin: auto;
+        margin-top: 20px;
+        color: #c5c5c5;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    }
+    .custom--ul {
+        padding: 20px 10px;
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            color: $dark-gray;
+        }
+    }
+}
+
+#rightSidebar.mystyle {
+    margin-right: -275px;
+}
+.main--title {
+    span.edit svg {
+        position: absolute;
+        right: 0;
+        height: 15px;
+        background: #dddde1;
+        padding: 10px;
+        border-radius: 100px;
+        border: 1px solid #b8b6b6;
+        box-shadow: 1px 2px 3px 0px rgb(229 229 229 / 67%);
+        top: -5px;
+    }
+}
+
+#rightSidebar.mystyle {
+    margin-right: 0 !important;
+    right: 0 !important;
+}
+.custom--ul {
+    li {
+        margin-top: 20px;
+    }
+}
+.inner-a-tag {
+    background: #f9f9f9;
+    padding: 10px;
+    position: relative;
+    min-height: 80px;
+    border-radius: 4px;
+    border: 1px solid lightgray;
+    a {
+        font-size: 14px;
+        font-weight: 300;
+    }
+    .fa-arrow-right-long {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+    }
+}

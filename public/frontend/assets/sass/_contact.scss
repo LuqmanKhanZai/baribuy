@@ -1,0 +1,63 @@
+// Contact page
+
+section#main__contact {
+  background-color: #f7fbfd;
+  padding: 30px 0;
+  p {
+    color: $black-gray;
+  }
+
+  ul.links--new {
+    li {
+      display: inline-block;
+      width: 49%;
+      margin: 5px 0;
+      margin: 20px 0;
+    }
+    span {
+      display: inline-block;
+      a {
+        font-size: 22px;
+        font-weight: 600;
+        color: $blue;
+      }
+    }
+    span.icon {
+      background: $blue;
+      padding: 10px;
+      display: inline-flex;
+      box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.15);
+      border-radius: 50%;
+      height: 60px;
+      width: 60px;
+      align-items: center;
+      justify-content: center;
+      padding: 35px;
+    }
+    svg {
+      height: 40px;
+      color: $white;
+    }
+  }
+}
+
+// Useful resources
+
+section#useful {
+  margin: 80px 0;
+  .font-blue {
+    color: $blue;
+  }
+  .light--text {
+    font-weight: 300;
+    font-size: 14px;
+  }
+  .box-inner {
+    background: #f6f7f8;
+    border: 1px solid #f3f3f3;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    padding: 20px 30px;
+    max-width: 500px;
+  }
+}

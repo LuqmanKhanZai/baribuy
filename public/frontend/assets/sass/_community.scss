@@ -1,0 +1,46 @@
+//  Community Page
+section.community--banner {
+  background-image: url("../img/communityBanner.png");
+  background-size: cover;
+  min-height: 400px;
+  margin-bottom: 50px;
+  display: flex;
+  color: $white;
+  justify-content: center;
+  .row {
+    height: 100%;
+  }
+}
+
+//   section Forum
+
+section#forum {
+  .ul--heading {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 32px;
+    color: $blue;
+   
+  }
+  .a-tag {
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    color: $black;
+  }
+  .ul-para {
+    color: $gray;
+    margin-top: 10px;
+  }
+  .ul--card {
+    background: #f7fbfd;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .text-underline{
+    text-decoration: underline;
+  }
+}

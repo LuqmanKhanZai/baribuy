@@ -1,0 +1,219 @@
+.heading--main {
+    @include fontHeading;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.subheading--main {
+    @include fontHeading;
+    font-weight: 400;
+    font-size: 16px;
+    color: $black;
+    max-width: 300px;
+}
+.right--video iframe {
+    width: 100%;
+    min-width: 35vw;
+}
+.right--video video {
+    border: 1px solid #d3d3d3a1;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    box-shadow: 2px 4px 2px 2px #d3d3d330;
+}
+.bg--hero {
+    background-image: url("./../img/bg.png");
+    background-size: 70% 100%;
+    position: relative;
+    top: -10px;
+}
+#mailing--box {
+    text-align: center;
+    background: $blue;
+    padding: 20px;
+    color: $white;
+}
+.template--modal {
+    .modal-header {
+        background-color: $blue;
+        color: $white;
+        font-weight: 500;
+        font-size: 16px;
+    }
+    .modal-body {
+        text-align: left;
+        p {
+            font-size: 14px;
+            color: $dark-gray;
+            max-width: 80%;
+        }
+    }
+}
+
+// Investment Section
+
+#investNow {
+    margin: 60px 0;
+    .section--heading {
+        @include fontHeading;
+        font-weight: bold;
+        font-size: 36px;
+        text-align: center;
+    }
+    .sub--heading {
+        max-width: 640px;
+        font-size: 22px;
+        font-weight: 400;
+        color: $dark-gray;
+        line-height: 26px;
+        margin: 20px auto;
+    }
+    .col--heading {
+        margin-top: 30px;
+        font-weight: 600;
+        @include fontHeading;
+        text-align: center;
+        font-size: 18px;
+    }
+    .col--para {
+        padding: 10px 30px;
+        margin-top: 10px;
+    }
+}
+
+//  section carousel
+
+section#carousel {
+    background-color: #eff4f8;
+    padding: 100px 0;
+    .carousel-indicators {
+        position: absolute;
+        bottom: -50px;
+        width: 100%;
+        margin: auto;
+        margin-left: 50%;
+    }
+    .carousel-indicators [data-bs-target] {
+        background-color: $blue;
+    }
+    .para--text {
+        font-size: 16px;
+        color: $dark-gray;
+        max-width: 75%;
+    }
+    .carousel-inner {
+        max-height: 350px;
+    }
+    .max-width-75 {
+        max-width: 75%;
+    }
+}
+
+.subheading {
+    @include fontHeading;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.03em;
+    display: block;
+    color: $gray;
+}
+
+.bg--btn {
+    background: $blue;
+    padding: 7px 20px;
+    color: $white;
+    border-radius: 6px;
+    box-shadow: 2px 4px 7px 0px lightgrey;
+    border: 1px solid transparent;
+    transition: all 0.3s;
+    font-size: 18px;
+    font-weight: 500;
+
+    &:hover {
+        color: $blue;
+        border-color: $blue;
+        background-color: transparent;
+    }
+}
+
+.no-bg--btn {
+    background: $white;
+    padding: 7px 20px;
+    color: $blue;
+    border-radius: 6px;
+    box-shadow: 2px 4px 7px 0px lightgrey;
+    border: 1px solid $blue;
+    transition: all 0.3s;
+    font-size: 18px;
+    font-weight: 500;
+    &:hover {
+        background-color: $light-gray;
+    }
+}
+
+// Blue bg section
+section#bluebg {
+    padding: 100px 0;
+    background-color: $bg-blue;
+    margin-bottom: 50px;
+    .heading--bluebg {
+        text-align: center;
+        @include fontHeading;
+        font-size: 36px;
+        color: $white;
+        font-weight: 600;
+    }
+    .details {
+        color: $white;
+        margin-top: 50px;
+        text-align: center;
+        & > div {
+            padding: 40px;
+        }
+        .col--heading {
+            font-weight: 400;
+            font-size: 18px;
+        }
+        p {
+            font-weight: 100;
+            padding: 20px 40px;
+            opacity: 0.9;
+            font-size: 14px;
+        }
+    }
+    .bg--white {
+        background-color: $white;
+        .col--heading {
+            color: $dark-gray;
+        }
+        p {
+            color: $dark-gray;
+        }
+    }
+}
+
+.border--bottom--white {
+    border-bottom: 1px solid $white;
+}
+
+// InvesterLink Section
+
+section#investerlink {
+    margin: 50px 0;
+    h1 {
+        font-size: 36px;
+        @include fontHeading;
+        font-weight: 600;
+    }
+    p {
+        font-size: 14px;
+        @include fontHeading;
+    }
+}
+
+.border--bottom--black{
+  border-bottom: 1px solid gray;
+}

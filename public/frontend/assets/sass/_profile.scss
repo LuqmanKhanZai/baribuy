@@ -1,0 +1,133 @@
+//  Profile page
+section#profile_header {
+  height: 300px;
+  .d-flex {
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  .profile--text {
+    margin-left: 20px;
+    .main--title {
+      @include fontHeading;
+      font-weight: 700;
+    }
+    .totle--fund {
+      color: $blue;
+      font-weight: 700;
+    }
+  }
+  .img--div {
+    svg {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      background: #ffffffa1;
+      padding: 10px;
+      border-radius: 100px;
+      border: 1px solid lightgray;
+      color: gray;
+      box-shadow: 2px 2px 4px 0px lightgrey;
+    }
+  }
+}
+
+// section tabs
+
+section#tabs {
+  ul.nav-tabs {
+    width: 600px;
+    margin: auto;
+    border: none;
+    li {
+      width: calc(100% / 3);
+      button {
+        width: 100%;
+      }
+    }
+  }
+
+  .nav-link:focus,
+  .nav-link:hover {
+    color: $dark-gray;
+  }
+  .nav-tabs .nav-link {
+    border: none;
+  }
+  .nav-link {
+    font-weight: 600;
+    color: $dark-gray;
+    border-bottom: 2px solid lightgray !important;
+  }
+
+  .nav-tabs .nav-link.active {
+    border-bottom-color: $blue !important;
+    color: $blue;
+  }
+
+  #myTabContent {
+    width: 600px;
+    margin: auto;
+
+    .tab--heading {
+      font-weight: 500;
+      font-size: 18px;
+      color: $dark-gray;
+      margin-top: 30px;
+      margin-bottom: 20px;
+      position: relative;
+    }
+  }
+  span.edit{
+   svg{
+    position: absolute;
+    right: 0;
+    height: 15px;
+    background: #dddde1;
+    padding: 10px;
+    border-radius: 100px;
+    border: 1px solid #b8b6b6;
+    box-shadow: 1px 2px 3px 0px #e5e5e5ab;
+    top: -5px;
+   }
+  }
+  .details--section{
+    font-size: 16px;
+    color: $black-gray;
+    margin: 10px 0;
+    font-weight: 400;
+    display: flex;
+    span.title{
+        width: 200px;
+    }
+  }
+  .btn-add{
+    a{
+      position: absolute;
+      right: 0px;
+      svg{
+        background-color: $blue;
+        padding: 2px 3px;
+        color: $white;
+        border-radius: 4px;
+        margin-right: 3px;
+      }
+    }
+  } 
+  .fund--heading{
+    font-size: 30px;
+    @include fontHeading;
+    color: $blue;
+    font-weight: 700;
+  }
+}
+
+.edit-btn-sidebar{
+  position: absolute;
+  right: -50px;
+}
+.close--sidebar--icon{
+  position: absolute;
+  top:10px;
+  right: 20px;
+}

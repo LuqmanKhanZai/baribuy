@@ -1,0 +1,100 @@
+// 
+
+//  Community Details
+
+.breadcrumb-item+.breadcrumb-item::before{
+    content: '>'
+}
+.breadcrumb-item{
+    text-decoration: underline;
+}
+
+// Listing Banner
+
+section#listing--banner{
+    background-color: #F7FBFD;
+    h1{
+        padding: 30px 0;
+    }
+}
+.color--blue{
+    color: $blue;
+}
+
+// detail__listing section
+
+section#detail__listing{
+
+    .d-flex{
+        align-items: center;
+        justify-content: space-around;
+    }
+    ul{
+        background-color: #F7FBFD;
+        li{
+            border-bottom: 1px solid lightgray;
+        }
+    }
+    .avatar{
+        padding: 20px;
+        width: 90px;
+    }
+    .details{
+        width: 60%;
+        margin-left: 20px;
+        p{
+            margin-bottom: 0;
+        }
+        .pagination{
+            display: inline-block;
+            ul{
+                li{
+                    display: inline-block;
+                    color: $blue;
+                    text-decoration: underline;
+                    a{
+                        color: $blue;
+                    }
+                }
+            }
+        }
+    }
+    .tag{
+        padding: 5px 30px;
+        border-radius: 30px;
+        color: $white;
+        margin: 0 10px;
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    }
+    .tag--green{
+        background-color: #187844;
+    }
+    .tag--golden{
+        background-color: #C1CF22;
+    }
+    .figures{
+        span{
+            cursor: pointer;
+            margin: 0 5px;
+            font-weight: 600;
+        }
+    }
+    .avatar--last{
+        display: inline-flex;
+    }
+}
+
+
+//  footer--pagination section
+
+section#footer--pagination{
+    .d-flex{
+        height: 100px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .text-underline{
+        text-decoration: underline;
+    }
+}
+

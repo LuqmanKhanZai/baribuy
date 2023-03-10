@@ -1,0 +1,53 @@
+//
+.post--btn {
+  background: $blue;
+  border-radius: 4px;
+  color: $white;
+  padding: 10px 30px;
+}
+section#details--banner {
+  background-color: #f7fbfd;
+  h1 {
+    padding: 30px 0;
+  }
+  .d--flex {
+    display: flex;
+    padding: 40px 0;
+    justify-content: end;
+    a {
+      color: $white;
+    }
+  }
+}
+section#detail__listing__other {
+  .d-flex {
+    justify-content: space-between;
+  }
+  ul.posting {
+    li {
+      border: 1px solid #eeeeee;
+      border-radius: 4px;
+      overflow: hidden;
+      box-shadow: 2px 2px 8px 0 #f8f8f8;
+      margin-top: 10px;
+      .avatar {
+        min-width: 200px;
+        background-color: #f7fbfd;
+        img {
+          padding: 20px;
+        }
+      }
+      p.details {
+        padding: 20px;
+        width: 70%;
+      }
+    }
+  }
+  .text-muted{
+    right: 20px;
+    position: relative;
+    top: 10px;
+    font-size: 12px;
+  }
+  
+}
