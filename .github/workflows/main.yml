@@ -11,7 +11,7 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.3
       with:
-        server: ftp.baribuy.com
+        server: ftpes.baribuy.com
         username: baribuy@baribuy.com
         password: Pakistan0314
         server-dir : /Baribuy.com/
